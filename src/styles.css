@@ -1,1 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.min.css";
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+body{
+    background-color: #ececec;
+    font-family: 'Roboto' !important;
+}
+
+*{
+    font-family: 'Roboto' !important;
+    border-radius:unset !important;
+}
+
+textarea {
+    resize: none;
+}
+
+input:focus, textarea:focus, input.form-control:focus {
+    outline:none !important;
+    outline-width: 0 !important;
+    box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+}
