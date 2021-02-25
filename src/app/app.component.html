@@ -1,9 +1,7 @@
-<h1> 
-	Hello world 
-</h1> 
-
-<div> 
-	<p> 
-		This is my First Angular app. 
-	</p> 
-</div> 
+<div class="toolbar" role="banner">
+    <span>{{ title | uppercase }}</span>
+    <div class="spacer"></div>
+</div>
+<div class="content" role="main">
+  <app-quote></app-quote>
+</div>
