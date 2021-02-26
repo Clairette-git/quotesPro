@@ -1,4 +1,4 @@
-import { Quote } from '@angular/compiler';
+import { Quote } from '../quote';
 import { Injectable } from '@angular/core';
 import { v4 as uuid } from 'uuid';
 @Injectable({
@@ -6,10 +6,8 @@ import { v4 as uuid } from 'uuid';
 })
 export class QuoteService {
   quotes: Quote[] = [  
-    new Quote(uuid(),'The greatest glory in living lies not in never falling, but in rising every time we fall.', 'Nelson Mandela',0,0,'Makamu Kelvin',new Date(2020,8,14),false),
-    new Quote(uuid(),'The way to get started is to quit talking and begin doing.', 'Walt Disney',0,0,'Kelvin Makamu',new Date(2020,8,15),false),
-    new Quote(uuid(),'If life were predictable it would cease to be life, and be without flavor.', 'Eleanor Roosevelt',0,0,'Makamu Kelvin',new Date(2020,8,16),false),
-    new Quote(uuid(),'If you set your goals ridiculously high and it\'s a failure, you will fail above everyone else\'s success.', 'James Cameron',0,0,'Kelvin Makamu',new Date(2020,8,18),false),
+    new Quote(uuid(),'The greatest glory in living lies not in never falling, but in rising every time we fall.', 'Nelson Mandela',0,0,' Ange Uwishema',new Date(2021,2,25),false),
+    new Quote(uuid(),'The way to get started is to quit talking and begin doing.', 'Walt Disney',0,0,'Ange Uwishema',new Date(2021,2,25),false),
 ];
 
 getQuotes(){
@@ -47,7 +45,7 @@ rankQuotes(): void{
             
               this.quotes[favIndex].isFavorite = true;
           }else{
-              
+              quote
               quote.isFavorite = false;
           }
       });
